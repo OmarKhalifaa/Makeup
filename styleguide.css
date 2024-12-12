@@ -1,0 +1,138 @@
+:root {
+    --brand-700: rgba(105, 65, 198, 1);
+    --basewhite: rgba(255, 255, 255, 1);
+    --gray-700: rgba(52, 64, 84, 1);
+    --gray-900: rgba(16, 24, 40, 1);
+    --gray-600: rgba(71, 84, 103, 1);
+    --gray-500: rgba(102, 112, 133, 1);
+    --gray-300: rgba(208, 213, 221, 1);
+    --gray-50: rgba(249, 250, 251, 1);
+    --gray-200: rgba(234, 236, 240, 1);
+    --gray-100: rgba(242, 244, 247, 1);
+    --text-md-semibold-font-family: "Inter", Helvetica;
+    --text-md-semibold-font-weight: 600;
+    --text-md-semibold-font-size: 16px;
+    --text-md-semibold-letter-spacing: 0px;
+    --text-md-semibold-line-height: 24px;
+    --text-md-semibold-font-style: normal;
+    --text-sm-medium-font-family: "Inter", Helvetica;
+    --text-sm-medium-font-weight: 500;
+    --text-sm-medium-font-size: 14px;
+    --text-sm-medium-letter-spacing: 0px;
+    --text-sm-medium-line-height: 20px;
+    --text-sm-medium-font-style: normal;
+    --display-xl-semibold-font-family: "Inter", Helvetica;
+    --display-xl-semibold-font-weight: 600;
+    --display-xl-semibold-font-size: 60px;
+    --display-xl-semibold-letter-spacing: -1.2px;
+    --display-xl-semibold-line-height: 72px;
+    --display-xl-semibold-font-style: normal;
+    --text-xl-regular-font-family: "Inter", Helvetica;
+    --text-xl-regular-font-weight: 400;
+    --text-xl-regular-font-size: 20px;
+    --text-xl-regular-letter-spacing: 0px;
+    --text-xl-regular-line-height: 30px;
+    --text-xl-regular-font-style: normal;
+    --text-lg-semibold-font-family: "Inter", Helvetica;
+    --text-lg-semibold-font-weight: 600;
+    --text-lg-semibold-font-size: 18px;
+    --text-lg-semibold-letter-spacing: 0px;
+    --text-lg-semibold-line-height: 28px;
+    --text-lg-semibold-font-style: normal;
+    --text-md-medium-font-family: "Inter", Helvetica;
+    --text-md-medium-font-weight: 500;
+    --text-md-medium-font-size: 16px;
+    --text-md-medium-letter-spacing: 0px;
+    --text-md-medium-line-height: 24px;
+    --text-md-medium-font-style: normal;
+    --display-md-semibold-font-family: "Inter", Helvetica;
+    --display-md-semibold-font-weight: 600;
+    --display-md-semibold-font-size: 36px;
+    --display-md-semibold-letter-spacing: -0.72px;
+    --display-md-semibold-line-height: 44px;
+    --display-md-semibold-font-style: normal;
+    --text-lg-regular-font-family: "Inter", Helvetica;
+    --text-lg-regular-font-weight: 400;
+    --text-lg-regular-font-size: 18px;
+    --text-lg-regular-letter-spacing: 0px;
+    --text-lg-regular-line-height: 28px;
+    --text-lg-regular-font-style: normal;
+    --display-sm-semibold-font-family: "Inter", Helvetica;
+    --display-sm-semibold-font-weight: 600;
+    --display-sm-semibold-font-size: 30px;
+    --display-sm-semibold-letter-spacing: 0px;
+    --display-sm-semibold-line-height: 38px;
+    --display-sm-semibold-font-style: normal;
+    --text-md-regular-font-family: "Inter", Helvetica;
+    --text-md-regular-font-weight: 400;
+    --text-md-regular-font-size: 16px;
+    --text-md-regular-letter-spacing: 0px;
+    --text-md-regular-line-height: 24px;
+    --text-md-regular-font-style: normal;
+    --text-lg-medium-font-family: "Inter", Helvetica;
+    --text-lg-medium-font-weight: 500;
+    --text-lg-medium-font-size: 18px;
+    --text-lg-medium-letter-spacing: 0px;
+    --text-lg-medium-line-height: 28px;
+    --text-lg-medium-font-style: normal;
+    --text-xl-semibold-font-family: "Inter", Helvetica;
+    --text-xl-semibold-font-weight: 600;
+    --text-xl-semibold-font-size: 20px;
+    --text-xl-semibold-letter-spacing: 0px;
+    --text-xl-semibold-line-height: 30px;
+    --text-xl-semibold-font-style: normal;
+    --text-md-regular-underlined-font-family: "Inter", Helvetica;
+    --text-md-regular-underlined-font-weight: 400;
+    --text-md-regular-underlined-font-size: 16px;
+    --text-md-regular-underlined-letter-spacing: 0px;
+    --text-md-regular-underlined-line-height: 24px;
+    --text-md-regular-underlined-font-style: normal;
+    --shadows-shadow-3xl: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+    --shadows-shadow-sm: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px
+        rgba(16, 24, 40, 0.1);
+    --shadows-shadow-xs: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    --1-color-modes-colors-text-text-tertiary-600: var(
+        --primitives-colors-gray-light-mode-600
+    );
+    --1-color-modes-colors-background-bg-primary-alt: var(
+        --primitives-colors-base-white
+    );
+    --3-spacing-spacing-3xl: var(--primitives-spacing-6-24px);
+    --3-spacing-spacing-4xl: var(--primitives-spacing-8-32px);
+    --3-spacing-spacing-9xl: var(--primitives-spacing-24-96px);
+    --primitives-colors-gray-light-mode-600: rgba(83, 88, 98, 1);
+    --primitives-spacing-6-24px: 24px;
+    --primitives-spacing-8-32px: 32px;
+    --primitives-colors-gray-dark-mode-400: rgba(148, 151, 156, 1);
+    --primitives-spacing-320-1-280px: 1280px;
+    --primitives-spacing-24-96px: 96px;
+    --primitives-colors-base-white: rgba(255, 255, 255, 1);
+    --5-containers-container-padding-desktop: var(--primitives-spacing-8-32px);
+    --5-containers-container-max-width-desktop: var(
+        --primitives-spacing-320-1-280px
+    );
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-1-color-modes-mode="light-mode">
+        <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-1-color-modes-mode="light-mode"] {
+    --1-color-modes-colors-text-text-tertiary-600: var(
+        --primitives-colors-gray-light-mode-600
+    );
+}
+
+[data-1-color-modes-mode="dark-mode"] {
+    --1-color-modes-colors-text-text-tertiary-600: var(
+        --primitives-colors-gray-dark-mode-400
+    );
+}
