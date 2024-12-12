@@ -1602,7 +1602,7 @@
 
 
 .home .contact-sections {
-    width: 1440px;
+   
     align-items: center;
     gap: 64px;
     padding: 96px 0px;
@@ -1742,7 +1742,6 @@
 .home .form-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 560px;
     align-items: center;
     gap: 64px;
     padding: 40px 32px;
