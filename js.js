@@ -22,23 +22,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-
-
-function showTabContent(tabId) {
-    // Hide all tab content
-    document.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
-    });
-
-    // Remove active class from all tabs
-    document.querySelectorAll('.tab-button-base, .tab-button-base-2').forEach(tab => {
-        tab.classList.remove('active');
-    });
-
-    // Show the selected tab content
-    document.getElementById(tabId).classList.add('active');
-
-    // Add active class to the clicked tab
-    event.currentTarget.classList.add('active');
+function showTabContent(tabId, element) {
+    // Remove 'active' class from all tabs
+    const tabs = document.querySelectorAll(".tab-button-base, .tab-button-base-2");
+    tabs.forEach((tab) => tab.classList.remove("active"));
+  
+    // Add 'active' class to the clicked tab
+    element.classList.add("active");
+  
+    // Scroll the clicked tab into view (within the tabs container)
+    const tabsContainer = document.querySelector(".horizontal-tabs");
+    const tabRect = element.getBoundingClientRect();
+    const containerRect = tabsContainer.getBoundingClientRect();
+  
+    // Check if the tab is outside the visible container
+    if (tabRect.left < containerRect.left || tabRect.right > containerRect.right) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest", // Ensure it stays within the horizontal container
+      });
+    }
+  
+    // Display the corresponding tab content
+    const contents = document.querySelectorAll(".tab-content");
+    contents.forEach((content) => content.classList.remove("active"));
+  
+    const activeContent = document.getElementById(tabId);
+    if (activeContent) {
+      activeContent.classList.add("active");
+    }
+  }
+  function toggleMenu() {
+    const navbarMenu = document.getElementById('navbarMenu');
+    navbarMenu.classList.toggle('active');
 }

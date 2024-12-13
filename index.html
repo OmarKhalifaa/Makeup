@@ -3,7 +3,6 @@
     <head>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8" />
-        <meta charset="utf-8" />
         <link rel="stylesheet" href="globals.css" />
         <link rel="stylesheet" href="styleguide.css" />
         <link rel="stylesheet" href="style.css" />
@@ -13,34 +12,48 @@
     <body>
         <div class="home ">
             <div class="hero-header-section">
-                <div class="dropdown-header">
-                    <header class="header">
-                        <div class="container">
-                            <div class="content">
-                                <img class="logo" src="img/logo.svg" /> <img class="navigation" src="img/navigation.svg" />
-                            </div>
-                            <div class="navigation-actions">
-                                <div class="buttons-button">
-                                    <div class="text-padding"><div class="text">Log in</div></div>
-                                </div>
-                                <div class="text-padding-wrapper">
-                                    <div class="text-padding"><div class="text-wrapper">Request a Demo</div></div>
-                                </div>
+                <div class="navbar">
+                    <div class="navbar-container">
+                        <!-- Logo -->
+                        <div class="navbar-logo">
+                            <img src="img/logo.svg" alt="Logo">
+                        </div>
+                
+                        <!-- Burger Menu Icon -->
+                        <div class="burger-menu" onclick="toggleMenu()">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </div>
+                
+                        <!-- Navigation Links and Buttons -->
+                        <div class="navbar-menu" id="navbarMenu">
+                            <nav class="navbar-links">
+                                <a href="#home">Home</a>
+                                <a href="#services">Services</a>
+                                <a href="#contact">Contact Us</a>
+                                <a href="#about">About Us</a>
+                            </nav>
+                            <div class="navbar-buttons">
+                                <button class="login-button">Log in</button>
+                                <button class="demo-button">Request a Demo</button>
                             </div>
                         </div>
-                    </header>
+                    </div>
                 </div>
-                <div class="header-section ">
+                
+                
+                <div class="header-section">
                     <div class="section">
                         <div class="content-wrapper">
                             <div class="div">
                                 <div class="heading-and">
                                     <div class="heading-and-badge">
                                         <div class="badge-group">
-                                            <div class="badge"><div class="text-2">AI Powered</div></div>
+                                            <div class="badge">AI Powered</div>
                                             <div class="content-2">
                                                 <p class="message">Check out the team dashboard</p>
-                                                <img class="arrow-right" src="img/arrow-right.svg" />
+                                                <img class="arrow-right" src="img/arrow-right.svg" alt="Arrow" />
                                             </div>
                                         </div>
                                         <p class="heading">Bringing Beauty Brands Closer To Customers</p>
@@ -49,43 +62,44 @@
                                 </div>
                                 <div class="actions">
                                     <div class="buttons-button-2">
-                                        <img class="img" src="img/play-circle.svg" />
-                                        <div class="text-padding"><div class="text-3">Demo</div></div>
+                                        <img class="img" src="img/play-circle.svg" alt="Play" />
+                                        <div class="text-3">Demo</div>
                                     </div>
                                     <button class="div-wrapper">
-                                        <div class="text-padding"><div class="text-4">Sign up</div></div>
+                                        <div class="text-4">Sign up</div>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <img class="background-pattern" src="img/background-pattern.svg" />
+                        <img class="background-pattern" src="img/background-pattern.svg" alt="Background" />
                     </div>
                     <div class="container-wrapper">
                         <div class="container-2">
                             <div class="image-wrapper">
-                                <div class="image">
-                                    
-                                </div>
+                                <div class="image"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="social-proof-section">
-                <div class="container-3">
-                    <div class="text-5">Trusted by 4,000+ Clientele</div>
-                    <div class="logos">
-                       
-                        <img class="company-logo-2" src="img/2.svg" />
-                        <img class="company-logo-2" src="img/3.svg" />
-                        <img class="company-logo-2" src="img/4.svg" />
-                        <img class="company-logo-2" src="img/5.svg" />
-                        <img class="company-logo-2" src="img/6.svg" />
-                        <img class="company-logo-2" src="img/7.svg" />
-                        <img class="company-logo-3" src="img/8.svg" />
-                    </div>
-                </div>
+            
+           <div class="social-proof-section">
+    <div class="container-3">
+        <div class="text-5">Trusted by 4,000+ Clientele</div>
+        <div class="logos">
+            <div class="logos-inner">
+                <img class="company-logo" src="img/2.svg" />
+                <img class="company-logo" src="img/3.svg" />
+                <img class="company-logo" src="img/4.svg" />
+                <img class="company-logo" src="img/5.svg" />
+                <img class="company-logo" src="img/6.svg" />
+                <img class="company-logo" src="img/7.svg" />
+                <img class="company-logo" src="img/8.svg" />
             </div>
+        </div>
+    </div>
+</div>
+
             <div class="after-before">
               <div class="container-4">
                   <div class="content-3">
@@ -99,29 +113,30 @@
                   </div>
               </div>
               <div class="container-4">
-                  <div class="div">
-                      <div class="horizontal-tabs">
-                          <div class="tab-button-base active" onclick="showTabContent('eyelashes')">
-                              <div class="text-6">Eye Lashes</div>
-                          </div>
-                          <div class="tab-button-base-2" onclick="showTabContent('profile')">
-                              <div class="text-7">Profile</div>
-                          </div>
-                          <div class="tab-button-base-2" onclick="showTabContent('software')">
-                              <div class="text-7">Software Engineering</div>
-                          </div>
-                          <div class="tab-button-base-2" onclick="showTabContent('customer')">
-                              <div class="text-7">Customer Success</div>
-                          </div>
-                          <div class="tab-button-base-2" onclick="showTabContent('sales')">
-                              <div class="text-7">Sales</div>
-                          </div>
-                          <div class="tab-button-base-2" onclick="showTabContent('marketing')">
-                              <div class="text-7">Marketing</div>
-                          </div>
-                      </div>
+                <div class="horizontal-tabs">
+                  <div class="tab-button-base active" onclick="showTabContent('eyelashes', this)">
+                    <div class="text-6">Eye Lashes</div>
                   </div>
+                  <div class="tab-button-base-2" onclick="showTabContent('profile', this)">
+                    <div class="text-7">Profile</div>
+                  </div>
+                  <div class="tab-button-base-2" onclick="showTabContent('software', this)">
+                    <div class="text-7">Software</div>
+                  </div>
+                  <div class="tab-button-base-2" onclick="showTabContent('customer', this)">
+                    <div class="text-7">Customer Success</div>
+                  </div>
+                  <div class="tab-button-base-2" onclick="showTabContent('sales', this)">
+                    <div class="text-7">Sales</div>
+                  </div>
+                  <div class="tab-button-base-2" onclick="showTabContent('marketing', this)">
+                    <div class="text-7">Marketing</div>
+                  </div>
+                </div>
               </div>
+              
+              
+              
               <div class="container-5">
                   <!-- Tab Contents -->
                   <div id="eyelashes" class="tab-content active">
@@ -163,10 +178,15 @@
                   </div>
                   <div id="profile" class="tab-content">
                       <div class="content-4">
-                          <div class="image-2"></div>
+                        <div class="video-container">
+                            <video class="video-2 " autoplay loop muted>
+                                <source src="img/1.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                           <div class="content-5">
                               <div class="div-2">
-                                  <div class="heading-3">Eyelashes</div>
+                                  <div class="heading-3">Profile</div>
                                   <p class="supporting-text-2">
                                       Eyelash shoppers can virtually try on a variety of eyelash styles to find the right pattern to
                                       complement their eyes. 1,000+ lifelike eyelash patterns to choose from, with adjustable application
@@ -195,10 +215,15 @@
                   </div>
                   <div id="software" class="tab-content">
                       <div class="content-4">
-                          <div class="image-2"></div>
+                        <div class="video-container">
+                            <video class="video-2 " autoplay loop muted>
+                                <source src="img/1.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                           <div class="content-5">
                               <div class="div-2">
-                                  <div class="heading-3">Eyelashes</div>
+                                  <div class="heading-3">Software</div>
                                   <p class="supporting-text-2">
                                       Eyelash shoppers can virtually try on a variety of eyelash styles to find the right pattern to
                                       complement their eyes. 1,000+ lifelike eyelash patterns to choose from, with adjustable application
@@ -227,7 +252,12 @@
                   </div>
                   <div id="customer" class="tab-content">
                       <div class="content-4">
-                          <div class="image-2"></div>
+                        <div class="video-container">
+                            <video class="video-2 " autoplay loop muted>
+                                <source src="img/1.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                           <div class="content-5">
                               <div class="div-2">
                                   <div class="heading-3">Eyelashes</div>
@@ -259,7 +289,12 @@
                   </div>
                   <div id="sales" class="tab-content">
                       <div class="content-4">
-                          <div class="image-2"></div>
+                        <div class="video-container">
+                            <video class="video-2 " autoplay loop muted>
+                                <source src="img/2.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                           <div class="content-5">
                               <div class="div-2">
                                   <div class="heading-3">Eyelashes</div>
@@ -291,7 +326,12 @@
                   </div>
                   <div id="marketing" class="tab-content">
                       <div class="content-4">
-                          <div class="image-2"></div>
+                        <div class="video-container">
+                            <video class="video-2 " autoplay loop muted>
+                                <source src="img/2.mp4 " type="video/mp4 ">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                           <div class="content-5">
                               <div class="div-2">
                                   <div class="heading-3">Eyelashes</div>
@@ -618,38 +658,7 @@
                     </div>
                 </div>
             </div>
-            <footer class="footer">
-                <div class="container-4">
-                    <div class="content-11">
-                        <div class="logo-wrap">
-                            <div class="logo-wrap-wrapper">
-                                <div class="logo"><img class="logomark" src="img/logomark.svg" /></div>
-                            </div>
-                        </div>
-                        <div class="footer-links">
-                            <div class="footer-link">
-                                <div class="buttons-button-4"><div class="text-16">Overview</div></div>
-                            </div>
-                            <div class="footer-link">
-                                <div class="buttons-button-4"><div class="text-16">Features</div></div>
-                            </div>
-                            <div class="footer-link">
-                                <div class="buttons-button-4"><div class="text-16">Pricing</div></div>
-                            </div>
-                            <div class="footer-link">
-                                <div class="buttons-button-4"><div class="text-16">Careers</div></div>
-                            </div>
-                            <button> class="buttons-button-wrapper">
-                                <button class="buttons-button-6"><div class="text-16">Help</div></button>
-                            </button>
-                            <div class="footer-link">
-                                <div class="buttons-button-4"><div class="text-16">Privacy</div></div>
-                            </div>
-                        </div>
-                        <div class="footer-text">© 2077 Untitled UI</div>
-                    </div>
-                </div>
-            </footer>
+            
         </div>
     </body>
 </html>
