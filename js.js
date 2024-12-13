@@ -57,3 +57,37 @@ function showTabContent(tabId, element) {
     const navbarMenu = document.getElementById('navbarMenu');
     navbarMenu.classList.toggle('active');
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const logosInner = document.querySelector(".logos-inner");
+    const logos = Array.from(logosInner.children);
+
+    // Duplicate logos to ensure seamless scrolling
+    logos.forEach((logo) => {
+        const clone = logo.cloneNode(true);
+        logosInner.appendChild(clone);
+    });
+
+    let scrollPosition = 0;
+
+    function scrollLogos() {
+        // Smooth and slower scroll
+        scrollPosition -= 0.5; // Reduce to 0.5 for smoother motion
+
+        // Apply the scroll effect
+        logosInner.style.transform = `translateX(${scrollPosition}px)`;
+
+        // Reset when the first set of logos is fully out of view
+        const firstLogo = logosInner.firstElementChild;
+        const firstLogoWidth = firstLogo.offsetWidth + 32; // Logo width + gap
+
+        if (Math.abs(scrollPosition) >= firstLogoWidth) {
+            // Avoid stutter by resetting position and appending the logo
+            scrollPosition += firstLogoWidth;
+            logosInner.appendChild(firstLogo);
+        }
+
+        requestAnimationFrame(scrollLogos);
+    }
+
+    scrollLogos();
+});

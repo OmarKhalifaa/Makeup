@@ -2,7 +2,9 @@
   
     background-color: #ffffff;
 }
-
+.header-section {
+    width: 100%;
+}
 .home .hero-header-section {
     display: flex;
     flex-direction: column;
@@ -12,15 +14,16 @@
     background-color: var(--basewhite);
     overflow: hidden;
 }
-/* General Navigation Styles */
+
 
 /* General Navbar Styles */
 .navbar {
     width: 100%;
     background-color: #fff;
     padding: 10px 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dedede;
     position: relative;
+    z-index: 1000;
 }
 
 .navbar-container {
@@ -37,37 +40,27 @@
     width: auto;
 }
 
-/* Burger Menu Icon */
-.burger-menu {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.burger-line {
-    width: 24px;
-    height: 3px;
-    background-color: #1a1a1a;
-    border-radius: 2px;
-}
-
-/* Navigation Menu */
-.navbar-menu {
+/* Group Logo and Links */
+.navbar-left {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 24px; /* Space between logo and links */
 }
 
-/* Navigation Links */
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal on desktop */
+    flex-direction: row;
+    gap: 16px; /* Space between links */
 }
 
-.navbar-links a {
+.navbar-list li {
+    margin: 0;
+}
+
+.navbar-list a {
     text-decoration: none;
     color: #1a1a1a;
     font-family: 'Arial', sans-serif;
@@ -75,7 +68,7 @@
     font-weight: 500;
 }
 
-.navbar-links a:hover {
+.navbar-list a:hover {
     color: #5e5e5e;
 }
 
@@ -100,9 +93,9 @@
 }
 
 .demo-button {
-    background-color: #0c111d;
+    background-color: #000000;
     color: #fff;
-    padding: 8px 16px;
+    padding: 14px 20px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -111,8 +104,73 @@
 }
 
 .demo-button:hover {
-    background-color: #1a1f2b;
+    background-color: #1a1a1a;
 }
+
+/* Burger Menu Icon */
+.burger-menu {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 24px;
+    height: 3px;
+    background-color: #1a1a1a;
+    border-radius: 2px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex; /* Show burger menu on mobile */
+    }
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; /* Full width for alignment */
+    }
+
+    .navbar-buttons {
+        display: none; /* Hidden by default */
+    }
+
+    .navbar-menu {
+        display: none; /* Hidden by default on mobile */
+    }
+
+    .navbar-menu.active,
+    .navbar-buttons.active {
+        display: flex;
+        flex-direction: column; /* Stack items for mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #dedede;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 16px 0;
+    }
+
+    .navbar-list {
+        flex-direction: column; /* Stack links vertically */
+        gap: 16px;
+        text-align: center;
+    }
+
+    .navbar-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        margin-top: 16px;
+    }
+}
+
+
 
 
 .home .header {
@@ -238,6 +296,8 @@
 .home .badge {
     display: inline-flex;
     align-items: center;
+    font-family: var(--text-sm-medium-font-family);
+    font-size: var(--text-sm-medium-font-size);
     gap: 12px;
     padding: 4px 10px;
     background-color: var(--basewhite);
@@ -458,20 +518,51 @@
     left: 0;
     background-color: #0000001a;
 }
-
-
-
-
-.home .social-proof-section {
+/* Social Proof Section */
+.home .logos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--3-spacing-spacing-4xl);
-    padding: var(--3-spacing-spacing-9xl) 0px var(--3-spacing-spacing-9xl) 0px;
+    overflow: hidden;
+    white-space: nowrap;
     position: relative;
-    width: 100%;
-    background-color: var(--1-color-modes-colors-background-bg-primary-alt);
 }
+
+.home .logos::before,
+.home .logos::after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.home .logos::before {
+    left: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.home .logos::after {
+    right: 0;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+.home .logos-inner {
+    display: flex;
+    gap: 32px; /* Space between logos */
+    will-change: transform;
+}
+
+.home .company-logo {
+    flex-shrink: 0;
+    height: 48px;
+    width: auto;
+}
+
+/* Add GPU acceleration for smoother scrolling */
+.home .logos-inner {
+    transform: translate3d(0, 0, 0);
+}
+
 
 .home .container-3 {
     display: flex;
@@ -2111,7 +2202,6 @@
     /* Adjust .home .div */
     .home .div {
         gap: 24px;
-        padding: 0 16px;
         flex-direction: column;
     }
 
@@ -2216,61 +2306,7 @@
         height: 200px !important;
     }
 
-    /* Social Proof Section */
-    .home .social-proof-section {
-        padding: 0;
-    }
-
-    .home .logos {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-        overflow: hidden;
-        white-space: nowrap;
-        padding: 8px;
-        position: relative;
-    }
-
-    .home .logos::before,
-    .home .logos::after {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 100%;
-        z-index: 1;
-        pointer-events: none;
-    }
-
-    .home .logos::before {
-        left: 0;
-        background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
-    }
-
-    .home .logos::after {
-        right: 0;
-        background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
-    }
-
-    .home .logos-inner {
-        display: flex;
-        animation: scroll-logos 30s linear infinite;
-    }
-
-    .home .company-logo {
-        flex-shrink: 0;
-        height: 48px;
-        width: auto;
-    }
-
-    @keyframes scroll-logos {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-100%);
-        }
-    }
-
+   
     /* Features & Metrics Section */
     .features-section,
     .metrics-section {
@@ -2430,39 +2466,64 @@ horizontal-tabs {
     order: 1; /* Place the content before the mockup */
 }
 /* Hide navigation links and buttons on mobile */
-.navbar-menu {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: 60px; /* Adjust based on logo height */
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.navbar-menu.active {
-    display: flex; /* Show menu when active */
-}
-
-/* Show burger menu icon on mobile */
 .burger-menu {
-    display: flex;
+    display: flex; /* Show burger menu on mobile */
 }
 
-/* Center logo */
-.navbar-container {
-    justify-content: space-between;
+  .burger-menu {
+        display: flex; /* Show burger menu on mobile */
+    }
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; /* Full width for alignment */
+    }
+
+    .navbar-buttons {
+        display: none; /* Hidden by default */
+    }
+
+    .navbar-menu {
+        display: none; /* Hidden by default on mobile */
+    }
+
+    .navbar-menu.active,
+    .navbar-buttons.active {
+        display: flex;
+        flex-direction: column; /* Stack items for mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #dedede;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 16px 0;
+    }
+
+    .navbar-list {
+        flex-direction: column; /* Stack links vertically */
+        gap: 16px;
+        text-align: center;
+    }
+
+    .navbar-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        margin-top: 16px;
+    }
+
+  .home .logos::before,
+.home .logos::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
 }
-  .background-pattern {
-    display: none;
-  }
-  .home .image {
-    margin-top: 32px;
-  }
+
 }
 
 
