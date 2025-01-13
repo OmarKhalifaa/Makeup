@@ -67,7 +67,7 @@
 }
 
 .navbar-list a:hover {
-  color: #5e5e5e;
+  color: #e52d04;
 }
 
 /* Buttons */
@@ -385,7 +385,7 @@
   gap: 10px;
   padding: 16px 22px;
   background-color: var(--basewhite);
-  border: 1px solid var(--gray-300);
+  border: 2px solid var(--gray-300);
   box-shadow: var(--shadows-shadow-xs);
   align-items: center;
   justify-content: center;
@@ -393,7 +393,16 @@
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
 }
+
+.home .buttons-button-2:hover {
+  border-color: #000000; /* Change border color to black on hover */
+  border-width: 2px; /* Make the border thicker on hover */
+  color: #000000; /* Change text color to black on hover */
+  cursor: pointer; /* Change cursor to hand on hover */
+}
+
 .home .text-3 {
   position: relative;
   width: fit-content;
@@ -423,6 +432,11 @@
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
+  cursor: pointer; /* Change cursor to hand on hover */
+}
+
+.home .div-wrapper:hover {
+  background-color: #333333; /* More light black on hover */
 }
 
 .home .text-4 {
@@ -1478,7 +1492,7 @@
   gap: 6px;
   padding: 12px 18px;
   background-color: var(--basewhite);
-  border: 1px solid;
+  border: 2px solid;
   border-color: var(--gray-300);
   box-shadow: var(--shadows-shadow-xs);
   align-items: center;
@@ -1487,6 +1501,13 @@
   flex: 0 0 auto;
   border-radius: 8px;
   overflow: hidden;
+  cursor: pointer; /* Change cursor to hand on hover */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+
+}
+
+.home .buttons-button-3:hover {
+  border-color: #000000; /* Change border color to black on hover */
 }
 
 .home .play-circle {
@@ -1524,7 +1545,11 @@
   border-radius: 8px;
   overflow: hidden;
 }
-
+.home .button:hover {
+  background-color: #333333; /* Darker background on hover */
+  color: #ffffff; /* Change text color to white on hover */
+  cursor: pointer; /* Change cursor to hand on hover */
+}
 .home .section-3 {
   padding: 0px 0px 96px;
   margin-top: -96px;
@@ -2519,6 +2544,12 @@
   .home .heading-4 {
     font-size: var(--display-sm-semibold-font-size);
     line-height: var(--display-sm-semibold-line-height);
+  }
+  .home .number {
+    font-size: var(--display-sm-semibold-font-size);
+  }
+  .home .metric-item {
+    padding: 24px 24px;
   }
 }
 
