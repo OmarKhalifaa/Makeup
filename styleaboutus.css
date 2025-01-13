@@ -530,3 +530,25 @@
   letter-spacing: var(--text-xl-semibold-letter-spacing);
   font-style: var(--text-xl-semibold-font-style);
 }
+@media (max-width: 768px) {
+
+  .desktop .content-wrapper{
+    width: auto;
+  }
+  .desktop .container-2{
+    
+    flex-direction: column;
+    padding: 32px;
+  }
+  .desktop .image {
+
+    flex: auto;
+  }
+   .desktop .number{
+    align-self : center;
+    
+   }
+   .desktop .text{
+    align-self : center;
+   }
+}
