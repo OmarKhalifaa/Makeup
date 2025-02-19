@@ -72,6 +72,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 16px;
+  max-height: 90vh;
   gap: var(--3-spacing-spacing-7xl);
   padding: var(--3-spacing-spacing-9xl) 0px var(--3-spacing-spacing-9xl) 0px;
   position: relative;
@@ -441,6 +443,9 @@
       min-width: min-content;
       max-width: max-content;
      
+    }
+    .services-section{
+      max-height: 350vh;
     }
 
   }
