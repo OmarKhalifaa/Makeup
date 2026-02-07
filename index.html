@@ -1,96 +1,160 @@
 <!DOCTYPE html>
 <html>
-    <head>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="globals.css" />
-        <link rel="stylesheet" href="styleguide.css" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="js.js" defer></script>
 
-    </head>
-    <body>
-        <div class="home ">
-            <div class="hero-header-section">
-                <div class="navbar">
-                    <div class="navbar-container">
-                        <!-- Logo and Links -->
-                        <div class="navbar-left">
-                            <div class="navbar-logo">
-                                <a href="./index.html">
-                                    <img src="./img/logo.svg" alt="Logo">
-                                </a>
-                            </div>
-                            <div class="navbar-menu" id="navbarMenu">
-                                <ul class="navbar-list">
-                                    <li><a href="./index.html">Home</a></li>
-                                    <li><a href="./Services.html">Services</a></li>
-                                    <li><a href="./Aboutus.html">About Us</a></li>
-                                </ul>
-                            </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js.js" defer></script>
+
+</head>
+
+<body>
+    <div class="home">
+        <header class="header-section">
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <!-- Logo and Links -->
+                    <div class="navbar-left">
+                        <div class="navbar-logo">
+                            <a href="./index.html">
+                                <img src="./img/logo.svg" alt="Logo">
+                            </a>
                         </div>
-                
-                        <!-- Buttons -->
-                        <div class="navbar-buttons">
-                            <button class="login-button" onclick="window.open('https://madmin.adteamin.com/login', '_blank')">Log in</button>
-                            <button class="demo-button">Request a Demo</button>
-                        </div>
-                
-                        <!-- Burger Menu Icon -->
-                        <div class="burger-menu" onclick="toggleMenu()">
-                            <span class="burger-line"></span>
-                            <span class="burger-line"></span>
-                            <span class="burger-line"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                
-                
-                <div class="header-section">
-                    <div class="section">
-                        <div class="content-wrapper">
-                            <div class="div">
-                                <div class="heading-and">
-                                    <div class="heading-and-badge">
-                                        <div class="badge-group">
-                                            <div class="badge">AI Powered</div>
-                                            <div class="content-2">
-                                                <p class="message">Check out the team dashboard</p>
-                                                <img class="arrow-right" src="img/arrow-right.svg" alt="Arrow" />
+                        <div class="navbar-menu" id="navbarMenu">
+                            <ul class="navbar-list">
+                                <li><a href="./index.html">Home</a></li>
+                                <li class="mega-dropdown">
+                                    <a href="./Services.html" class="dropdown-trigger">Services <span
+                                            class="dropdown-arrow">▼</span></a>
+                                    <div class="mega-menu">
+                                        <div class="mega-menu-container">
+                                            <div class="mega-menu-column">
+                                                <h4>Virtual Try-On</h4>
+                                                <ul>
+                                                    <li><a href="./Services.html#eyelashes">Eyelashes</a></li>
+                                                    <li><a href="./Services.html#eyeshadow">Eye Shadow</a></li>
+                                                    <li><a href="./Services.html#eyeliner">Eye Liner</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Face Products</h4>
+                                                <ul>
+                                                    <li><a href="./Services.html#blush">Blush</a></li>
+                                                    <li><a href="./Services.html#lipcolor">Lip Color</a></li>
+                                                    <li><a href="./Services.html#highlighter">Highlighter</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Integration</h4>
+                                                <ul>
+                                                    <li><a href="./Services.html#web">Web SDK</a></li>
+                                                    <li><a href="./Services.html#mobile">Mobile SDK</a></li>
+                                                    <li><a href="./Services.html#api">API Access</a></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <p class="heading">Bringing Beauty Brands Closer To Customers</p>
                                     </div>
-                                    <p class="supporting-text">Elevate customer experience with Visual AI automation</p>
-                                </div>
-                                <div class="actions">
-                                    <div class="buttons-button-2">
-                                        <img class="img" src="img/play-circle.svg" alt="Play" />
-                                        <div class="text-3">Demo</div>
+                                </li>
+                                <li class="mega-dropdown">
+                                    <a href="./Aboutus.html" class="dropdown-trigger">About Us <span
+                                            class="dropdown-arrow">▼</span></a>
+                                    <div class="mega-menu">
+                                        <div class="mega-menu-container">
+                                            <div class="mega-menu-column">
+                                                <h4>Company</h4>
+                                                <ul>
+                                                    <li><a href="./Aboutus.html#story">Our Story</a></li>
+                                                    <li><a href="./Aboutus.html#mission">Mission & Vision</a></li>
+                                                    <li><a href="./Aboutus.html#team">Our Team</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>Resources</h4>
+                                                <ul>
+                                                    <li><a href="./Aboutus.html#careers">Careers</a></li>
+                                                    <li><a href="./Aboutus.html#news">News & Press</a></li>
+                                                    <li><a href="./Aboutus.html#contact">Contact Us</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column mega-menu-featured">
+                                                <h4>Featured</h4>
+                                                <p>Discover how we're revolutionizing the beauty industry with
+                                                    AI-powered solutions.</p>
+                                                <a href="./Aboutus.html" class="mega-menu-cta">Learn More →</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <button class="div-wrapper">
-                                        <div class="text-4">Sign up</div>
-                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="navbar-buttons">
+                        <button class="login-button"
+                            onclick="window.open('https://madmin.adteamin.com/login', '_blank')">Log in</button>
+                        <button class="demo-button"
+                            onclick="document.querySelector('.contact-sections').scrollIntoView({ behavior: 'smooth' })">Request
+                            a Demo</button>
+                    </div>
+
+                    <!-- Burger Menu Icon -->
+                    <div class="burger-menu" onclick="toggleMenu()">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                </div>
+            </nav>
+
+
+            <section class="header-section">
+                <div class="section">
+                    <div class="content-wrapper">
+                        <div class="hero-content-inner">
+                            <div class="hero-header-wrapper animate-on-scroll">
+                                <div class="hero-badge-wrapper">
+                                    <div class="badge-group">
+                                        <div class="badge">AI Powered</div>
+                                        <div class="content-2">
+                                            <p class="message">Check out the team dashboard</p>
+                                            <img class="arrow-right" src="img/arrow-right.svg" alt="Arrow" />
+                                        </div>
+                                    </div>
+                                    <p class="hero-heading"><span id="typing-text"></span><span
+                                            class="typing-cursor">&nbsp;</span></p>
                                 </div>
+                                <p class="supporting-text">Elevate customer experience with Visual AI automation</p>
+                            </div>
+                            <div class="actions animate-on-scroll delay-200">
+                                <div class="buttons-button-2">
+                                    <img class="img" src="img/play-circle.svg" alt="Play" />
+                                    <div class="text-3">Demo</div>
+                                </div>
+                                <button class="div-wrapper">
+                                    <div class="text-4">Sign up</div>
+                                </button>
                             </div>
                         </div>
-                        <img class="background-pattern" src="img/background-pattern.svg" alt="Background" />
                     </div>
-                    <div class="container-wrapper">
-                        <div class="container-2">
-                            <div class="image-wrapper">
-                                <div class="image"></div>
-                            </div>
+                    <img class="background-pattern" src="img/background-pattern.svg" alt="Background" />
+                </div>
+                <div class="container-wrapper">
+                    <div class="container-2">
+                        <div class="image-wrapper">
+                            <div class="image"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="social-proof-section">
-                <div class="container-3">
+            </section>
+        </header>
+
+        <main>
+            <section class="social-proof-section">
+                <div class="social-proof-container animate-on-scroll">
                     <div class="text-5">Trusted by 4,000+ Clientele</div>
                     <div class="logos">
                         <div class="logos-inner">
@@ -104,286 +168,345 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="after-before">
-              <div class="container-4">
-                  <div class="content-3">
-                      <div class="heading-and-2">
-                          <p class="heading-2">How Does AI Virtual Makeup Try On Work?</p>
-                          <p class="p">
-                              The ultra-realistic AI and AR-powered virtual makeup try on experience is like looking into a virtual
-                              mirror.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-              <div class="container-4">
-                <div class="horizontal-tabs">
-                  <div class="tab-button-base active" onclick="showTabContent('eyelashes', this)">
-                    <div class="text-6">Eye Lashes</div>
-                  </div>
-                  <div class="tab-button-base-2" onclick="showTabContent('eyeshadow', this)">
-                    <div class="text-7">Eye Shadow</div>
-                  </div>
-                  <div class="tab-button-base-2" onclick="showTabContent('eyeliner', this)">
-                    <div class="text-7">Eye liner</div>
-                  </div>
-                  <div class="tab-button-base-2" onclick="showTabContent('blush', this)">
-                    <div class="text-7">Blush</div>
-                  </div>
-                  <div class="tab-button-base-2" onclick="showTabContent('lipcolor', this)">
-                    <div class="text-7">Lip Color</div>
-                  </div>
-                  <div class="tab-button-base-2" onclick="showTabContent('highlighter', this)">
-                    <div class="text-7">Highlighter</div>
-                  </div>
+            </section>
+
+            <section class="how-it-works-section">
+                <div class="section-container animate-on-scroll">
+                    <div class="section-content">
+                        <div class="section-header">
+                            <p class="section-title">How Does AI Virtual Makeup Try On Work?</p>
+                            <p class="section-description">
+                                The ultra-realistic AI and AR-powered virtual makeup try on experience is like looking
+                                into
+                                a virtual
+                                mirror.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
-              
-              
-              <div class="container-5">
-                  <!-- Tab Contents -->
-                  <div id="eyelashes" class="tab-content active">
-                      <div class="content-4">
-                        <div class="video-container">
-                          <video class="video-2 " autoplay loop muted>
-                              <source src="img/1.mp4 " type="video/mp4 ">
-                              Your browser does not support the video tag.
-                          </video>
-                      </div>
-                          <div class="content-5">
-                              <div class="div-2">
-                                  <div class="heading-3">Eyelashes</div>
-                                  <p class="supporting-text-2">
-                                      Eyelash shoppers can virtually try on a variety of eyelash styles to find the right pattern to
-                                      complement their eyes. 1,000+ lifelike eyelash patterns to choose from, with adjustable application
-                                      parameters.
-                                  </p>
-                              </div>
-                              <div class="div-2">
-                                  <p class="supporting-text-3">The virtual eyelash patterns can be with</p>
-                                  <div class="check-items">
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Upper lash only</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Lower lash only</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><p class="text-8">Both upper and lower lashes</p></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="eyeshadow" class="tab-content">
-                      <div class="content-4">
-                        <div class="video-container">
-                            <video class="video-2 " autoplay loop muted>
-                                <source src="img/es.mp4 " type="video/mp4 ">
-                                Your browser does not support the video tag.
-                            </video>
+                <div class="section-container animate-on-scroll delay-100">
+                    <div class="horizontal-tabs">
+                        <div class="tab-button-base active" onclick="showTabContent('eyelashes', this)">
+                            <div class="text-6">Eye Lashes</div>
                         </div>
-                          <div class="content-5">
-                              <div class="div-2">
-                                  <div class="heading-3">Eye Shadow</div>
-                                  <p class="supporting-text-2">
-                                    Empower your customers to find the perfect eyeshadow palette to make their eyes pop. Eyeshadow virtual try-on experience with 1,000+ color patterns, and wide range of supported textures.
-                                  </p>
-                              </div>
-                              <div class="div-2">
-                                  <p class="supporting-text-3">Supported eyeshadow textures</p>
-                                  <div class="check-items">
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Matte</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Shimmer</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><p class="text-8">Metallic</p></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="eyeliner" class="tab-content">
-                      <div class="content-4">
-                        <div class="video-container">
-                            <video class="video-2 " autoplay loop muted>
-                                <source src="img/3.mp4 " type="video/mp4 ">
-                               
-                            </video>
+                        <div class="tab-button-base-2" onclick="showTabContent('eyeshadow', this)">
+                            <div class="text-7">Eye Shadow</div>
                         </div>
-                          <div class="content-5">
-                              <div class="div-2">
-                                  <div class="heading-3">Eye Liner</div>
-                                  <p class="supporting-text-2">
-                                    Offer various eyeliner patterns and allow your customers to find the one that suits them best with AI eyeliner try-on. 800+ supported eyeliner patterns with endless customization options.
-                                  </p>
-                              </div>
-                              <div class="div-2">
-                                  <p class="supporting-text-3">Supported virtual eyeliner patterns</p>
-                                  <div class="check-items">
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Customized eyeliner patterns can be created and added easily</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Multi-Color Eyelinery</div></div>
-                                      </div>
-                                    
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="blush" class="tab-content">
-                      <div class="content-4">
-                        <div class="video-container">
-                            <video class="video-2 " autoplay loop muted>
-                                <source src="img/blush.mp4 " type="video/mp4 ">
-                                Your browser does not support the video tag.
-                            </video>
+                        <div class="tab-button-base-2" onclick="showTabContent('eyeliner', this)">
+                            <div class="text-7">Eye liner</div>
                         </div>
-                          <div class="content-5">
-                              <div class="div-2">
-                                  <div class="heading-3">Blush</div>
-                                  <p class="supporting-text-2">
-                                    Offer customers true-to-life virtual try on for wide array of blush shades and patterns. Empower shoppers to experiment with 140+ different blush patterns and several hyper-realistic textures.
+                        <div class="tab-button-base-2" onclick="showTabContent('blush', this)">
+                            <div class="text-7">Blush</div>
+                        </div>
+                        <div class="tab-button-base-2" onclick="showTabContent('lipcolor', this)">
+                            <div class="text-7">Lip Color</div>
+                        </div>
+                        <div class="tab-button-base-2" onclick="showTabContent('highlighter', this)">
+                            <div class="text-7">Highlighter</div>
+                        </div>
+                    </div>
+                </div>
 
 
-                                  </p>
-                              </div>
-                              <div class="div-2">
-                                  <p class="supporting-text-3">Supported Blush textures</p>
-                                  <div class="check-items">
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Matte</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Dewy </div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><p class="text-8">Shimmer</p></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="lipcolor" class="tab-content">
-                      <div class="content-4">
-                        <div class="video-container">
-                            <video class="video-2 " autoplay loop muted>
-                                <source src="img/lc.mp4 " type="video/mp4 ">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                          <div class="content-5">
-                              <div class="div-2">
-                                  <div class="heading-3">Lip Color</div>
-                                  <p class="supporting-text-2">
-                                    Highly accurate virtual lip color try-on experience translates the shade, texture, intensity, and application patterns of physical products into digital try-ons.
 
-                                  </p>
-                              </div>
-                              <div class="div-2">
-                                  <p class="supporting-text-3">Realistic Textures</p>
-                                  <div class="check-items">
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Matte</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Satin </div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><p class="text-8">Metallic </p></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="highlighter" class="tab-content">
-                      <div class="content-4">
-                        <div class="video-container">
-                            <video class="video-2 " autoplay loop muted>
-                                <source src="img/hi.mp4 " type="video/mp4 ">
-                                Your browser does not support the video tag.
-                            </video>
+                <div class="container-5">
+                    <!-- Tab Contents -->
+                    <div id="eyelashes" class="tab-content active">
+                        <div class="tab-panel-layout">
+                            <div class="video-container">
+                                <video class="video-2 " autoplay loop muted>
+                                    <source src="img/1.mp4 " type="video/mp4 ">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="tab-panel-text">
+                                <div class="div-2">
+                                    <div class="heading-3">Eyelashes</div>
+                                    <p class="supporting-text-2">
+                                        Eyelash shoppers can virtually try on a variety of eyelash styles to find the
+                                        right
+                                        pattern to
+                                        complement their eyes. 1,000+ lifelike eyelash patterns to choose from, with
+                                        adjustable application
+                                        parameters.
+                                    </p>
+                                </div>
+                                <div class="div-2">
+                                    <p class="supporting-text-3">The virtual eyelash patterns can be with</p>
+                                    <div class="check-items">
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Upper lash only</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Lower lash only</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <p class="text-8">Both upper and lower lashes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                          <div class="content-5">
-                              <div class="div-2">
-                                  <div class="heading-3">Highlighter</div>
-                                  <p class="supporting-text-2">
-                                    With our AI highlighter try-on, brands will be able to provide multiple patterns and finishes for a rich virtual try-on experience, giving your shoppers the freedom to experiment and create endless looks.
-                                  </p>
-                              </div>
-                              <div class="div-2">
-                                  <p class="supporting-text-3">supported highlighter textures</p>
-                                  <div class="check-items">
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Matte</div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><div class="text-8">Glow </div></div>
-                                      </div>
-                                      <div class="div-3">
-                                          <img class="check-icon" src="img/check-icon.svg" />
-                                          <div class="text-wrap"><p class="text-8">Shimmer </p></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          
-            <div class="features-section">
-                <div class="container-4">
-                    <div class="content-3">
-                        <div class="heading-and-2">
+                    </div>
+                    <div id="eyeshadow" class="tab-content">
+                        <div class="content-4">
+                            <div class="video-container">
+                                <video class="video-2 " autoplay loop muted>
+                                    <source src="img/es.mp4 " type="video/mp4 ">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="content-5">
+                                <div class="div-2">
+                                    <div class="heading-3">Eye Shadow</div>
+                                    <p class="supporting-text-2">
+                                        Empower your customers to find the perfect eyeshadow palette to make their eyes
+                                        pop.
+                                        Eyeshadow virtual try-on experience with 1,000+ color patterns, and wide range
+                                        of
+                                        supported textures.
+                                    </p>
+                                </div>
+                                <div class="div-2">
+                                    <p class="supporting-text-3">Supported eyeshadow textures</p>
+                                    <div class="check-items">
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Matte</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Shimmer</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <p class="text-8">Metallic</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="eyeliner" class="tab-content">
+                        <div class="content-4">
+                            <div class="video-container">
+                                <video class="video-2 " autoplay loop muted>
+                                    <source src="img/3.mp4 " type="video/mp4 ">
+
+                                </video>
+                            </div>
+                            <div class="content-5">
+                                <div class="div-2">
+                                    <div class="heading-3">Eye Liner</div>
+                                    <p class="supporting-text-2">
+                                        Offer various eyeliner patterns and allow your customers to find the one that
+                                        suits
+                                        them best with AI eyeliner try-on. 800+ supported eyeliner patterns with endless
+                                        customization options.
+                                    </p>
+                                </div>
+                                <div class="div-2">
+                                    <p class="supporting-text-3">Supported virtual eyeliner patterns</p>
+                                    <div class="check-items">
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Customized eyeliner patterns can be created and
+                                                    added
+                                                    easily</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Multi-Color Eyelinery</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blush" class="tab-content">
+                        <div class="content-4">
+                            <div class="video-container">
+                                <video class="video-2 " autoplay loop muted>
+                                    <source src="img/blush.mp4 " type="video/mp4 ">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="content-5">
+                                <div class="div-2">
+                                    <div class="heading-3">Blush</div>
+                                    <p class="supporting-text-2">
+                                        Offer customers true-to-life virtual try on for wide array of blush shades and
+                                        patterns. Empower shoppers to experiment with 140+ different blush patterns and
+                                        several hyper-realistic textures.
+
+
+                                    </p>
+                                </div>
+                                <div class="div-2">
+                                    <p class="supporting-text-3">Supported Blush textures</p>
+                                    <div class="check-items">
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Matte</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Dewy </div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <p class="text-8">Shimmer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lipcolor" class="tab-content">
+                        <div class="content-4">
+                            <div class="video-container">
+                                <video class="video-2 " autoplay loop muted>
+                                    <source src="img/lc.mp4 " type="video/mp4 ">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="content-5">
+                                <div class="div-2">
+                                    <div class="heading-3">Lip Color</div>
+                                    <p class="supporting-text-2">
+                                        Highly accurate virtual lip color try-on experience translates the shade,
+                                        texture,
+                                        intensity, and application patterns of physical products into digital try-ons.
+
+                                    </p>
+                                </div>
+                                <div class="div-2">
+                                    <p class="supporting-text-3">Realistic Textures</p>
+                                    <div class="check-items">
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Matte</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Satin </div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <p class="text-8">Metallic </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="highlighter" class="tab-content">
+                        <div class="content-4">
+                            <div class="video-container">
+                                <video class="video-2 " autoplay loop muted>
+                                    <source src="img/hi.mp4 " type="video/mp4 ">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="content-5">
+                                <div class="div-2">
+                                    <div class="heading-3">Highlighter</div>
+                                    <p class="supporting-text-2">
+                                        With our AI highlighter try-on, brands will be able to provide multiple patterns
+                                        and
+                                        finishes for a rich virtual try-on experience, giving your shoppers the freedom
+                                        to
+                                        experiment and create endless looks.
+                                    </p>
+                                </div>
+                                <div class="div-2">
+                                    <p class="supporting-text-3">supported highlighter textures</p>
+                                    <div class="check-items">
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Matte</div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <div class="text-8">Glow </div>
+                                            </div>
+                                        </div>
+                                        <div class="div-3">
+                                            <img class="check-icon" src="img/check-icon.svg" />
+                                            <div class="text-wrap">
+                                                <p class="text-8">Shimmer </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="features-section">
+                <div class="section-container animate-on-scroll">
+                    <div class="section-content">
+                        <div class="section-header">
                             <div class="div-4">
                                 <div class="subheading">Features &amp; Availability</div>
                                 <p class="heading-4">Virtual Makeup Try-On Anywhere, Anytime</p>
                             </div>
-                            <p class="p">
-                                With Virtual Makeup Try-On, your customers can experiment with different looks from the comfort of their
+                            <p class="section-description">
+                                With Virtual Makeup Try-On, your customers can experiment with different looks from the
+                                comfort of their
                                 own space, no matter where they are.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="container-6">
-                    <div class="content-6">
+                <div class="feature-row">
+                    <div class="feature-text-group">
                         <div class="div-5">
                             <div class="featured-icon"><img class="img-2" src="img/chart-breakout-square.svg" /></div>
                             <div class="div-2">
                                 <p class="heading-5">Web , Mobile , Online SDK</p>
                                 <p class="supporting-text-4">
-                                    Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the
+                                    Measure what matters with Untitled’s easy-to-use reports. You can filter, export,
+                                    and
+                                    drilldown on the
                                     data in a couple clicks.
                                 </p>
                             </div>
@@ -391,11 +514,15 @@
                         <div class="check-items-2">
                             <div class="div-3">
                                 <div class="check-icon-2"></div>
-                                <div class="text-wrap"><p class="text-8">Filter, export, and drilldown on the data quickly</p></div>
+                                <div class="text-wrap">
+                                    <p class="text-8">Filter, export, and drilldown on the data quickly</p>
+                                </div>
                             </div>
                             <div class="div-3">
                                 <div class="check-icon-2"></div>
-                                <div class="text-wrap"><p class="text-8">Save, schedule, and automate reports to your inbox</p></div>
+                                <div class="text-wrap">
+                                    <p class="text-8">Save, schedule, and automate reports to your inbox</p>
+                                </div>
                             </div>
                             <div class="div-3">
                                 <div class="check-icon-2"></div>
@@ -405,16 +532,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mockup-wrap-wrapper">
+                    <div class="mockup-wrap-wrapper animate-on-scroll delay-200">
                         <img class="mockup-svg" src="./img/Mockup wrap.svg" alt="Mockup">
 
                     </div>
                 </div>
-                <div class="container-6">
-                    <div class="mockup-wrap-wrapper">
+                <div class="feature-row">
+                    <div class="mockup-wrap-wrapper animate-on-scroll">
                         <img class="mockup-svg" src="./img/Mockup wrap 2.svg" alt="Mockup">
                     </div>
-                    <div class="content-6">
+                    <div class="feature-text-group animate-on-scroll delay-200">
                         <div class="div-5">
                             <div class="featured-icon"><img class="img-2" src="img/zap-fast.svg" /></div>
                             <div class="div-2">
@@ -427,11 +554,15 @@
                         <div class="check-items-2">
                             <div class="div-3">
                                 <div class="check-icon-2"></div>
-                                <div class="text-wrap"><p class="text-8">Keep your customers in the loop with live chat</p></div>
+                                <div class="text-wrap">
+                                    <p class="text-8">Keep your customers in the loop with live chat</p>
+                                </div>
                             </div>
                             <div class="div-3">
                                 <div class="check-icon-2"></div>
-                                <div class="text-wrap"><p class="text-8">Embed help articles right on your website</p></div>
+                                <div class="text-wrap">
+                                    <p class="text-8">Embed help articles right on your website</p>
+                                </div>
                             </div>
                             <div class="div-3">
                                 <div class="check-icon-2"></div>
@@ -442,39 +573,49 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="metrics-section">
-                <div class="section-2">
+            </section>
+            <section class="metrics-section">
+                <div class="roi-content">
                     <div class="content-wrapper">
-                        <div class="content-3">
-                            <div class="heading-and-2">
+                        <div class="section-content">
+                            <div class="section-header">
                                 <div class="div-4">
-                                    <div class="subheading-2">ROI</div>
-                                    <p class="heading-6">How Our Solutions Benefit Our Partners</p>
+                                    <div class="subheading-2 animate-on-scroll">ROI</div>
+                                    <p class="heading-6 animate-on-scroll delay-100">How Our Solutions Benefit Our
+                                        Partners
+                                    </p>
                                 </div>
-                                <p class="supporting-text-5">Everything you need to build modern Try-on and great products.</p>
+                                <p class="supporting-text-5 animate-on-scroll delay-200">Everything you need to build
+                                    modern
+                                    Try-on and great products.
+                                </p>
                             </div>
                             <div class="actions">
                                 <div class="buttons-button-3">
                                     <img class="play-circle" src="img/play-circle.svg" />
-                                    <div class="text-padding"><div class="text-9">Demo</div></div>
+                                    <div class="text-padding">
+                                        <div class="text-9">Demo</div>
+                                    </div>
                                 </div>
                                 <button class="button">
-                                    <div class="text-padding"><div class="text-wrapper">Get started</div></div>
+                                    <div class="text-padding">
+                                        <div class="text-wrapper">Get started</div>
+                                    </div>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="section-3">
-                    <div class="container-2">
+                <div class="metrics-wrapper">
+                    <div class="metrics-container">
                         <div class="metrics">
                             <div class="metric-item">
                                 <div class="div-4">
                                     <div class="number">48%</div>
                                     <div class="text-and-supporting">
                                         <p class="text-10">Average increase in basket size</p>
-                                        <p class="supporting-text-6">We’ve helped build over 400 projects with great companies.</p>
+                                        <p class="supporting-text-6">We’ve helped build over 400 projects with great
+                                            companies.</p>
                                     </div>
                                 </div>
                             </div>
@@ -483,34 +624,37 @@
                                     <div class="number">Upto 2.5x</div>
                                     <div class="text-and-supporting">
                                         <div class="text-10">Increase in conversion rate</div>
-                                        <p class="supporting-text-6">We’ve helped build over 400 projects with great companies.</p>
+                                        <p class="supporting-text-6">We’ve helped build over 400 projects with great
+                                            companies.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="metric-item">
+                            <div class="metric-item animate-on-scroll delay-300">
                                 <div class="div-4">
                                     <div class="number">Upto 12%</div>
                                     <div class="text-and-supporting">
                                         <p class="text-10">Decrease in product return rate</p>
-                                        <p class="supporting-text-6">Our free UI kit has been downloaded over 10k times.</p>
+                                        <p class="supporting-text-6">Our free UI kit has been downloaded over 10k times.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="FAQ-section">
-                <div class="container-4">
-                    <div class="content-3">
-                        <div class="heading-and-2">
-                            <div class="heading-2">Frequently asked questions</div>
-                            <p class="p">Everything you need to know about the product and billing.</p>
+            </section>
+            <section class="faq-section">
+                <div class="section-container">
+                    <div class="section-content">
+                        <div class="section-header animate-on-scroll">
+                            <div class="section-title">Frequently asked questions</div>
+                            <p class="section-description">Everything you need to know about the product and billing.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="container-7">
-                    <div class="content-7">
+                <div class="faq-container">
+                    <div class="faq-content">
                         <!-- FAQ Item 1 -->
                         <div class="FAQ-accordian-item">
                             <div class="FAQ-title">
@@ -521,7 +665,9 @@
                             </div>
                             <div class="FAQ-content">
                                 <p class="supporting-text-7">
-                                    Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized
+                                    Yes, you can try us for free for 30 days. If you want, we’ll provide you with a
+                                    free,
+                                    personalized
                                     30-minute onboarding call to get you up and running as soon as possible.
                                 </p>
                             </div>
@@ -543,23 +689,25 @@
                         <!-- Add more FAQ items as needed -->
                     </div>
                 </div>
-            </div>
-            
-            
-            <div class="contact-sections">
+            </section>
+
+
+            <section class="contact-section">
                 <div class="content-wrapper">
-                    <div class="content-3">
-                        <div class="heading-and-2">
-                            <div class="heading-and-3">
+                    <div class="section-content">
+                        <div class="section-header">
+                            <div class="section-header-inner">
                                 <div class="subheading-2">Contact us</div>
                                 <p class="heading-6">Chat to our friendly team</p>
                             </div>
-                            <p class="supporting-text">We’d love to hear from you. Please fill out this form or shoot us an email.</p>
+                            <p class="supporting-text">We’d love to hear from you. Please fill out this form or shoot us
+                                an
+                                email.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-8">
-                    <div class="content-9">
+                <div class="contact-container">
+                    <div class="contact-content">
                         <div class="row">
                             <div class="contact-text">
                                 <img class="img" src="img/mail-01.svg" />
@@ -567,7 +715,9 @@
                                     <div class="text-12">Email</div>
                                     <p class="supporting-text-8">Our friendly team is here to help.</p>
                                 </div>
-                                <div class="buttons-button-4"><div class="text-13">hi@untitledui.com</div></div>
+                                <div class="buttons-button-4">
+                                    <div class="text-13">hi@untitledui.com</div>
+                                </div>
                             </div>
                             <div class="contact-text">
                                 <img class="img" src="img/message-chat-circle-home.svg" />
@@ -575,10 +725,12 @@
                                     <div class="text-12">Live chat</div>
                                     <p class="supporting-text-8">Our friendly team is here to help.</p>
                                 </div>
-                                <div class="buttons-button-4"><div class="text-13">Start new chat</div></div>
+                                <div class="buttons-button-4">
+                                    <div class="text-13">Start new chat</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row animate-on-scroll delay-200">
                             <div class="contact-text">
                                 <img class="img" src="img/marker-pin-02.svg" />
                                 <div class="text-and-supporting-3">
@@ -595,36 +747,41 @@
                                     <div class="text-12">Phone</div>
                                     <p class="supporting-text-8">Mon-Fri from 8am to 5pm.</p>
                                 </div>
-                                <div class="buttons-button-4"><div class="text-13">+1 (555) 000-0000</div></div>
+                                <div class="buttons-button-4">
+                                    <div class="text-13">+1 (555) 000-0000</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="form-wrapper">
+                    <div class="form-wrapper animate-on-scroll delay-300">
                         <div class="form">
                             <div class="div-5">
                                 <div class="row">
                                     <div class="input-field">
-                                        <div class="div-7">
+                                        <div class="input-group">
                                             <input class="label" for="input-1" placeholder="First name" type="text" />
                                             <div class="input">
-                                                <input class="content-10" placeholder="First name" type="text" id="input-1" />
+                                                <input class="content-10" placeholder="First name" type="text"
+                                                    id="input-1" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="input-field">
-                                        <div class="div-7">
+                                        <div class="input-group">
                                             <input class="label" for="input-2" placeholder="Last name" type="text" />
                                             <div class="input">
-                                                <input class="content-10" placeholder="Last name" type="text" id="input-2" />
+                                                <input class="content-10" placeholder="Last name" type="text"
+                                                    id="input-2" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="div-7">
-                                    <div class="div-7">
+                                <div class="input-group">
+                                    <div class="input-group">
                                         <input class="label" for="input-3" placeholder="Email" type="email" />
                                         <div class="input">
-                                            <input class="content-10" placeholder="you@company.com" type="email" id="input-3" />
+                                            <input class="content-10" placeholder="you@company.com" type="email"
+                                                id="input-3" />
                                         </div>
                                     </div>
                                 </div>
@@ -635,7 +792,9 @@
                                     </div>
                                 </div>
                                 <div class="div-3">
-                                    <div class="checkbox-base-wrapper"><div class="checkbox-base"></div></div>
+                                    <div class="checkbox-base-wrapper">
+                                        <div class="checkbox-base"></div>
+                                    </div>
                                     <div class="text-and-supporting-4">
                                         <p class="text-15">
                                             <span class="span">You agree to our friendly </span>
@@ -647,14 +806,17 @@
                             </div>
                             <div class="div-2">
                                 <div class="buttons-button-5">
-                                    <div class="text-padding"><div class="text-wrapper">Send message</div></div>
+                                    <div class="text-padding">
+                                        <div class="text-wrapper">Send message</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-    </body>
+            </section>
+        </main>
+    </div>
+</body>
+
 </html>
